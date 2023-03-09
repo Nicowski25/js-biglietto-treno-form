@@ -4,13 +4,14 @@ const calc = document.getElementById("calc")
 //implementiamo la funzione col click
 calc.addEventListener('click',
     function() {
+        const name = document.getElementById("name").value
         const km = document.getElementById("km").value //seleziono il value di km
         const age = document.getElementById("age").value //selezioni il value di age
         let price = km * 0.21 // moltiplico i km per il prezzo/km
         console.log(price)
         let finalPrice = document.getElementById("finalPrice")
-        //se il passeggero è minorenne applico uno sconto del 20%
-        if (age < 18) {
+        ticketName.append(`${name}`)
+        if (age < 18) {  //se il passeggero è minorenne applico uno sconto del 20%
             discount = (price * 20 / 100).toFixed(2)
             price = (price - discount).toFixed(2)
             console.log(discount, price)
