@@ -5,12 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Biglietto Treno</title>
 </head>
-<body>
-    <input type="text" id="km" value="55">
-    <input type="text" id="age" value="15">
-    <button class="btn"></button>
+<body class="all">
+    <div class="container-fluid bg_top py-4">
+        <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </div>
+    <div class="container py-4 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h3>Nome e cognome</h3>                    
+                    <input type="text" class="input_btn" id="name" id="Nicola">
+                </div>
+                <div class="col-4">
+                    <h3>Km da percorrere</h3>
+                    <input type="text" class="input_btn" id="km" value="55">
+                </div>
+                <div class="col-4">
+                    <h3>Fascia d'età</h3>
+                    <input type="text" class="input_btn" id="age" value="15">
+                </div>
+            </div>
+        </div>
+        <div class="pt-4">
+            <button class="btn btn-primary px-4 mx-2">Calcola</button>
+            <button class="btn btn-primary px-4 mx-2">Annulla</button>
+        </div>
+    </div>
 
     <script src="./assets/js/main.js"></script>
 </body>
