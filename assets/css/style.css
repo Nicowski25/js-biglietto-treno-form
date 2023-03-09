@@ -8,6 +8,7 @@
     --topgrey: #35393C;
     --bg: #42858C;
     --inputbtn: #63CCCA;
+    --ticket: #397367;
 }
 
 .all {
@@ -28,4 +29,24 @@
     padding: 0.5rem;
     border: 3px solid var(--inputbtn);
     border-radius: 1rem;
+}
+
+.ticket {
+    border: 2px solid var(--inputbtn);
+    border-radius: 0.5rem;
+    background-color: var(--ticket);
+}
+
+.ticketname {
+    background-color: var(--topgrey);
+}
+
+.col > h5 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.col-4 > h5 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
